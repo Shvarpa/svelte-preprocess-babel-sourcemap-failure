@@ -5,7 +5,7 @@ webpack throws:
 
 else, if soruceMap is disable everything works as intended.
 
-the error seems to come from
+the error seems to come from [`autoProcess.ts`](https://github.com/sveltejs/svelte-preprocess/blob/master/src/autoProcess.ts#L254-L286)
 
     const script = async ({ content, attributes, filename, }) => {
         const transformResult = await scriptTransformer({
@@ -29,7 +29,7 @@ the error seems to come from
         return { code, map, dependencies, diagnostics };
     };
 
-transformResult.map seems to be a json string, and babel wants an object.  
+transformResult.map seems to be a json string, and babel wants an object.
 
 the following fixes the problem but i dont know if source map works as intended.
 
