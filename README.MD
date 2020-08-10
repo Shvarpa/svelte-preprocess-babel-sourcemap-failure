@@ -43,7 +43,7 @@ the following fixes the problem but i dont know if source map works as intended.
         if (transformers.babel) {
             const transformed = await exports.runTransformer('babel', getTransformerOptions('babel'), {
                 content: code,
-                map: typeof map == "string" ? JSON.parse(map) : map,
+                map: typeof map == "string" ? JSON.parse(map) : map, //fix
                 filename,
                 attributes,
             });
