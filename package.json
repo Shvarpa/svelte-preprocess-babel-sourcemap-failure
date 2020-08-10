@@ -1,0 +1,24 @@
+{
+	"name": "svelte-preprocess-babel-sourcemap-failure",
+	"version": "1.0.0",
+	"author": "Pavel Shvarchov <Shvarpa@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"prod": "set NODE_ENV=production&& webpack --mode=production",
+		"dev": "webpack-dev-server"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.11.1",
+		"@babel/preset-typescript": "^7.10.4",
+		"babel-loader": "^8.1.0",
+		"css-loader": "^4.2.1",
+		"style-loader": "^1.2.1",
+		"svelte": "^3.24.1",
+		"svelte-loader": "^2.13.6",
+		"svelte-preprocess": "^4.0.10",
+		"typescript": "^3.9.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	}
+}
