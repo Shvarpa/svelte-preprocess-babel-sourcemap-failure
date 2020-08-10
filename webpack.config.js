@@ -23,7 +23,7 @@ module.exports = {
 	resolve,
 	module: {
 		rules: [
-			{ test: /\.(m?js|[js]sx?)$/, use: { loader: "babel-loader" } },
+			{ test: /\.(m?js|[jt]sx?)$/, use: { loader: "babel-loader" } },
 			{
 				test: /\.(svelte|html)$/,
 				use: [

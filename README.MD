@@ -1,7 +1,10 @@
 When using svelte preprocess with typescript & babel,  
 if sourceMap option is enabled inside tsconfig.json.  
 webpack throws:  
- ERROR in ./src/index.svelte Module build failed (from ./node_modules/svelte-loader/index.js): Error: .inputSourceMap must be a boolean, object, or undefined
+
+      ERROR in ./src/index.svelte 
+      Module build failed (from ./node_modules/svelte-loader/index.js): 
+      Error: .inputSourceMap must be a boolean, object, or undefined
 
 else, if soruceMap is disable everything works as intended.
 
